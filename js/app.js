@@ -7,6 +7,10 @@ $(document).ready(function() {
       $cultureDrop = $("#culture-drop");
       $blogsDrop = $("#blogs-drop");
 
+  function show (element) {
+    element.show();
+  }
+
   function hide (elementShown) {
       $internationalDrop.hide();
       $politicsDrop.hide();
@@ -18,10 +22,24 @@ $(document).ready(function() {
       show(elementShown);
   }
 
-  function show (element) {
-    element.show();
-  }
+  
+//   $("#primary-nav li").click(function() {
+//      event.preventDefault();
 
+//     if ($(this).hasClass("active")) {
+//       $(this).removeClass("active");
+//       $("#slide-down").slideUp();
+//     } else {
+//       $("#primary-nav li").removeClass("active");
+//       $(this).addClass("active");
+
+//       hide($internationalDrop); 
+// //since this has to go at the bottom, (moving it messed things up), I couldn;t figure out how to make these
+// //variables and functions of their own 
+//       $("#slide-down").slideDown();
+    
+//     }
+//   });
 
 
   $(document).on("click", "li.international", function(event) {
@@ -35,7 +53,8 @@ $(document).ready(function() {
       $(this).addClass("active");
 
       hide($internationalDrop); 
-
+//since this has to go at the bottom, (moving it messed things up), I couldn;t figure out how to make these
+//variables and functions of their own 
       $("#slide-down").slideDown();
     
     }
