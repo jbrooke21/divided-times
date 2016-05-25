@@ -22,7 +22,7 @@ $(document).ready(function() {
       show(elementShown);
   }
 
-  
+  //this was my starting attempt to figure out how to put it all into one click event
 //   $("#primary-nav li").click(function() {
 //      event.preventDefault();
 
@@ -34,8 +34,7 @@ $(document).ready(function() {
 //       $(this).addClass("active");
 
 //       hide($internationalDrop); 
-// //since this has to go at the bottom, (moving it messed things up), I couldn;t figure out how to make these
-// //variables and functions of their own 
+
 //       $("#slide-down").slideDown();
     
 //     }
